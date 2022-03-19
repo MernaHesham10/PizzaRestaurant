@@ -1,0 +1,633 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+  }
+  body{
+      background-color: rgb(182, 178, 178);
+  }
+  
+  nav{
+      background-color: rgb(58, 57, 57);
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 12vh;
+      font-size: 17px;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    nav ul{
+      list-style-type: none;
+    }
+    nav ul li{
+      padding:20px 17px 0 20px;
+      float: left;
+    }
+    nav ul li img
+    {
+       margin-top: -13px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+    nav ul li details{
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+    nav ul li a, nav ul li #logout{
+        font-family: 'Courgette', cursive;
+    
+       font-weight: 900;
+       font-size: 25px;
+       text-decoration: none;
+       color: rgb(247, 3, 3);
+      }
+    
+      nav li a:hover , nav ul li #logout:hover
+      {
+         color:  silver;
+         text-shadow:2px 2px 2px rgb(107, 106, 106);
+      }
+    #logout{
+        cursor: pointer;
+        border: none;
+        outline: none;
+        background-color: transparent;
+    }
+  
+  
+  /*main*/
+  .desc{
+      width: auto;
+      height: 600px;
+      position: relative;
+      min-height: 100vh;
+  }
+  .desc img 
+  {
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh; 
+      opacity: 0.7; 
+  }
+  .desc .titles{
+      position: absolute;
+      top: 34%;
+      left: 10%;
+      word-spacing: 3px;
+      line-height: 55px;
+  }
+  .desc h1
+  {
+      color:rgb(184, 184, 184);
+  text-align: center;
+  font-size: 55px;
+  font-weight: bolder;
+  text-shadow: 5px 5px 6px rgb(0, 0, 0);
+  font-family: 'Courgette', cursive;
+  }
+ 
+  /* pizzas */
+.d2 
+{
+    font-family: 'Courgette', cursive;
+    margin-top: 4%;
+    margin-bottom: 68%;
+}
+.d2 h4
+{
+
+    color: red;
+    text-shadow: 1px 1px 2px red;
+text-align: center;
+font-size: 35px;
+font-weight: bolder;
+padding-bottom: 2%;
+}
+.d2 h5
+{
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+}
+.d2 .h_pizza{
+    margin-top: 30px;
+}
+.d2 button
+{
+padding: 15px 20px;
+border-radius: 15px;
+outline-style: none;
+font-size: 25px;
+font-weight: bold;
+border: none;
+outline: none;
+cursor: pointer;
+font-family: 'Courgette', cursive;
+background-color: rgb(107, 107, 107);
+text-shadow: 1px 1px 2px black;
+}
+
+.d2 button:hover
+{
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 2px red;
+
+}
+
+
+
+/*order btn*/
+
+/* Extra styles for the cancel button */
+.p1 .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+  
+  /* Center the image and position the close button */
+  .p1 .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+  
+.p1 .container {
+    padding: 160px;
+}
+  
+  /* The Modal (background) */
+  .p1 .modal {
+   
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    padding-top: 100px;
+  
+}
+  
+  /* Modal Content/Box */
+.p1 .modal-content {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: -3% auto 20% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    height: 160vh;
+    border-radius: 7%;
+    width: 63%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .p1 .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  
+  .p1 .close:hover,
+  .p1 .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .p1 .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+  .p1 .container .modelbox
+  {
+  
+   display: block;
+     position: absolute;
+     right: 500px;
+     width:38%;
+     height: auto;
+     color: #000;
+      top: 75%;
+      left: 50%;
+      padding: 30px 30px;
+      transform: translate(-50%,-50%);
+      box-shadow: 8px 8px 50px #000;
+      border-radius: 10%;
+      background-color:rgb(99, 99, 99);
+     
+    
+  }
+  .modelbox .one /*time*/
+  { 
+      
+      text-align: center;
+   background-size: contain;
+   border-radius: 20px;
+   background: center;
+  }
+  .modelbox .h11/*time and address a word*/
+  {
+      margin-bottom: 20px;
+      text-align: center;
+      padding: 20px 50px;
+      background-color: red;
+      font-weight: bold;
+      font-size: 25px;
+      border-radius: 50%;
+      color: White;
+  }
+  .modelbox .two /*address*/
+    {
+      border-radius: 20px;
+      background-clip: border-box;
+    }
+.account .a /*sing in*/{
+    text-align: left;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 5%;
+    background-size:400px;
+    border-radius: 20px;
+    color: White;
+}
+.p1 input[type=text], .p1 input[type=password]{
+      margin-top: 15px;
+      margin-left: 8%;
+      border: none;
+      width: 500px;
+     padding: 10px 15px;
+      font-size: 18px;
+       border-radius: 15px;
+      outline: none;
+  }
+  .p1 .login{
+      margin: 15px 0 20px 5%;
+      font-family: 'Courgette', cursive;
+      text-align: center;
+      border: none;
+      text-decoration: none;
+      background-color: red;
+      width: 20%;
+      color: white;
+      cursor: pointer;
+     padding: 10px 15px;
+      font-size: 25px;
+       border-radius: 15px;
+      outline: none;
+  }
+  .c/*boxes shape*/{
+      border: none;
+      margin-left: 8%;
+   width: 500px;
+  padding: 10px 15px;
+   font-size: 18px;
+    display: block;
+    border-radius: 15px;
+  }
+  .account input[type=checkbox]{
+      margin-left: 8%;
+      font-size: 50px;
+  }
+  .bottom-text .forget{
+   
+    font-family: 'Courgette', cursive;
+      margin-right: 55%;
+      margin-top: 3%;
+      color: white;
+      font-size: 20px;
+      text-decoration: none;
+  }
+
+
+
+.p1 img
+{
+    border-radius: 25px;
+}
+
+.p1
+{
+margin-left: 80px;
+margin-top: 2%;
+width: 280px;
+text-align: center;
+float: left;
+margin-bottom: 4%;
+}
+.p1 h4 
+{
+padding-top: 3%;    
+    color: tomato;
+}
+.p1 h5
+{
+    color: black;
+}
+
+/*drinks*/
+.d3 
+{
+    clear: both;
+    font-family: 'Courgette', cursive;
+    margin-top: 10%;
+    margin-bottom: 38%;
+}
+.d3 h4
+{
+color: red;
+    text-shadow: 1px 1px 2px red;
+text-align: center;
+font-size: 35px;
+font-weight: bolder;
+padding-bottom: 2%;
+}
+.d3 h5
+{
+    color: red;
+    text-shadow: 1px 1px 2px red;
+text-align: center;
+font-size: 35px;
+font-weight: bolder;
+}
+.d3 .h_dri{
+    margin-bottom: 1%;
+    margin-top: 30px;
+}
+.d3 button
+{
+padding: 15px 20px;
+border-radius: 15px;
+outline-style: none;
+font-size: 25px;
+font-weight: bold;
+border: none;
+outline: none;
+cursor: pointer;
+font-family: 'Courgette', cursive;
+background-color: rgb(107, 107, 107);
+text-shadow: 1px 1px 2px black;
+}
+
+.d3 button:hover
+{
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 2px red;
+
+}
+.d3 .p1 img
+{
+    border-radius: 25px;
+}
+
+.d3 .p1
+{
+margin-left: 80px;
+margin-top: 2%;
+width: 280px;
+text-align: center;
+float: left;
+margin-bottom: 4%;
+}
+.d3 .p1 h4 
+{
+padding-top: 3%;    
+    color: tomato;
+}
+.d3 .p1 h5
+{
+    color: black;
+}
+
+/*desserts*/
+.d4 
+{
+    clear: both;
+    font-family: 'Courgette', cursive;
+    margin-top: 10%;
+    margin-bottom: 30%;
+}
+.d4 h4
+{
+color: red;
+    text-shadow: 1px 1px 2px red;
+text-align: center;
+font-size: 35px;
+font-weight: bolder;
+padding-bottom: 2%;
+}
+.d4 h5
+{
+    color: red;
+    text-shadow: 1px 1px 2px red;
+text-align: center;
+font-size: 35px;
+font-weight: bolder;
+}
+.d4 .h_des{
+    margin-bottom: 1%;
+    margin-top: 30px;
+}
+.d4 button
+{
+padding: 15px 20px;
+border-radius: 15px;
+outline-style: none;
+font-size: 25px;
+font-weight: bold;
+border: none;
+outline: none;
+cursor: pointer;
+font-family: 'Courgette', cursive;
+background-color: rgb(107, 107, 107);
+text-shadow: 1px 1px 2px black;
+}
+
+.d4 button:hover
+{
+    color: rgb(255, 0, 0);
+    text-shadow: 1px 1px 2px red;
+
+}
+.d4 .p1 img
+{
+    border-radius: 25px;
+}
+
+.d4 .p1
+{
+margin-left: 80px;
+margin-top: 2%;
+width: 280px;
+text-align: center;
+float: left;
+margin-bottom: 4%;
+}
+.d4 .p1 h4 
+{
+padding-top: 3%;    
+    color: tomato;
+}
+.d4 .p1 h5
+{
+    color: black;
+}
+  
+  /*footer 1*/
+  footer{
+      margin-top: 30px;
+      clear: both;
+      padding:30px 0;
+      height: 20vh;
+  }
+  
+  #list1{
+      margin: 8% 5%;
+      width: 25%;
+  padding: 30px;
+  text-align: left;
+  float: left;
+  }
+  #list1 h1{
+      color: rgb(255, 0, 0);
+      font-family: 'Courgette', cursive;
+      text-shadow: 1px 1px 2px red ;
+      padding-bottom: 13px;
+  }
+  #list1 p{
+  font-size: 20px;
+  word-spacing: 4px;
+  line-height: 27px;
+  }
+  .logo1{
+      list-style-type: none;
+  }
+  .logo1 li{
+      padding-top: 35px;
+      padding-left: 35px;
+      font-size: 30px;
+      float: left;
+  }
+  .f1{
+      color: blue;
+  }
+  .f2{
+      color: lightblue;
+  }
+  .f3{
+      color: red;
+  }
+  .f4{
+      color: purple;
+  }
+  
+  /*footer 2*/
+  #list2{
+      margin: 8% 10px;
+      width: 24%;
+      padding: 30px;
+      text-align: left;
+      float: left;
+  }
+  #list2 h1{
+      color: rgb(255, 0, 0);
+      font-family: 'Courgette', cursive;
+      text-shadow: 1px 1px 2px red ;
+  }
+  .logo2{
+      list-style-type: none;
+  }
+  .logo2 li a{
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+  }
+  .logo2 li{
+      padding-top: 20px;
+      font-size: 20px;
+  }
+  .logo2 li a:hover{
+      font-size: 23px;
+      font-weight: bolder;
+      text-shadow: 1px 1px 2px red;
+     color: red;
+  }
+  
+  /*footer 3*/
+  #list3{
+      margin: 8%  10px;
+      width: 26%;
+      padding: 30px;
+      text-align: left;
+      float: left;
+      
+  }
+  #list3 h1{
+      color: rgb(255, 0, 0);
+      font-family: 'Courgette', cursive;
+      text-shadow: 1px 1px 2px red ;
+  }
+  .logo3{
+      list-style-type: none;
+  }
+  .logo3 li{
+      line-height: 35px;
+      margin-top: 20px;
+  }
+  .logo3 li i{
+      font-size: 30px;
+  }
+  .logo3 li span{
+  
+      font-size: 20px;
+      padding-left: 20px;
+  
+  }
+  #list4{
+   
+      display: block;
+      margin-top: 33%;
+  
+      width: 100%;
+      height: 20vh;
+      background-color: rgb(58, 57, 57);
+  }
+  #list4 h1{
+  
+      color: rgb(255, 4, 4);
+      text-shadow: 2px 2px 2px black;
+      font-size: 30px;
+      font-family: 'Courgette', cursive;
+      word-spacing: 10px;
+  }

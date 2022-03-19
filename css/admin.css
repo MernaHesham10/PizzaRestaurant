@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+  
+  }
+  body{
+      background-color: rgb(182, 178, 178);
+  }
+  nav{
+      background-color: rgb(58, 57, 57);
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 12vh;
+      font-size: 17px;
+      display: flex;
+      justify-content: space-between;
+      
+    }
+    nav ul{
+      list-style-type: none;
+    }
+    nav ul li{
+      padding:20px 17px 0 20px;
+      float: left;
+    }
+    nav ul li img
+    {
+       margin-top: -13px;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+    }
+    nav ul li details{
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+    nav ul li a, nav ul li #logout{
+      font-family: 'Courgette', cursive;
+  
+     font-weight: 900;
+     font-size: 25px;
+     text-decoration: none;
+     color: rgb(247, 3, 3);
+    }
+  
+    nav li a:hover , nav ul li #logout:hover
+    {
+       color:  silver;
+       text-shadow:2px 2px 2px rgb(107, 106, 106);
+    }
+  #logout{
+      cursor: pointer;
+      border: none;
+      outline: none;
+      background-color: transparent;
+  }
+  
+  /*main*/
+  .desc{
+      width: auto;
+      height: 600px;
+      position: relative;
+      min-height: 100vh;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh; 
+      opacity: 0.7; 
+  }
+  
+  .desc .titles{
+      position: absolute;
+      top: 34%;
+      left: 10%;
+      word-spacing: 3px;
+      line-height: 55px;
+  }
+  .desc h1
+  {
+      color:rgb(184, 184, 184);
+  text-align: center;
+  font-size: 70px;
+  font-weight: bolder;
+  text-shadow: 5px 5px 6px rgb(0, 0, 0);
+  font-family: 'Courgette', cursive;
+  }
+
+   /* start admin page*/
+.p1
+{
+margin-left: 80px;
+margin-top: 2%;
+width: 280px;
+text-align: center;
+float: left;
+margin-bottom: 4%;
+}
+.p1 h4 
+{
+padding-top: 3%;    
+    color: tomato;
+}
+.p1 h5
+{
+    color: black;
+}
+
+   .s2 img
+   {
+   margin-left: 93px;
+   margin-top: 2%;
+   border-radius: 15px;
+   
+   }
+   
+         .change
+         {
+             margin-top: 10%;
+             background-color: rgb(58, 57, 57);
+         color: white;
+         width: 30%;
+         height: 25%;
+        padding: 55px;
+           margin-left: 30%;
+         text-align: center;
+         border-radius: 12px;
+         text-align: center;
+         margin-bottom: 1%;
+         }
+         .change h2{
+             margin-bottom: 30px;
+             word-spacing: 10px;
+             font-size: 30px;
+             font-family: 'Courgette', cursive;
+         }
+         .btn
+         {
+            font-family: 'Courgette', cursive;
+         padding: 16px 20px;
+         outline: none;
+         border: none;
+         border-radius: 15px;
+         cursor: pointer;
+         font-size: 25px;
+         color: white;
+         background-color: rgb(114, 113, 113);
+         text-shadow:1px 1px 2px black;
+   font-weight: bolder;
+         }
+         .change .btn:hover
+         {
+             color: red;
+             text-shadow:1px 1px 2px red;
+         }
+   
+         .change .color
+         {
+             margin-top: 20px;
+             display: block;
+         }
+  #text{
+      margin-top: 15px;
+outline: none;
+border: none;
+border-radius: 15px;
+        padding: 8px 15%;
+    
+  }
+         /*end admi page*/
+
+
+
+
+
+  
+
+    
+  /*footer 1*/
+  footer{
+      margin-top: 30px;
+      clear: both;
+      padding:30px 0;
+      height: 20vh;
+  }
+  #list1{
+      margin: 8% 5%;
+      width: 25%;
+  padding: 30px;
+  text-align: left;
+  float: left;
+  }
+  #list1 h1{
+      color: rgb(255, 0, 0);
+      font-family: 'Courgette', cursive;
+      text-shadow: 1px 1px 2px red ;
+      padding-bottom: 13px;
+  }
+  #list1 p{
+  font-size: 20px;
+  word-spacing: 4px;
+  line-height: 27px;
+  }
+  .logo1{
+      list-style-type: none;
+  }
+  .logo1 li{
+      padding-top: 35px;
+      padding-left: 35px;
+      font-size: 30px;
+      float: left;
+  }
+  .f1{
+      color: blue;
+  }
+  .f2{
+      color: lightblue;
+  }
+  .f3{
+      color: red;
+  }
+  .f4{
+      color: purple;
+  }
+  
+  /*footer 2*/
+  #list2{
+      margin: 8% 10px;
+      width: 24%;
+      padding: 30px;
+      text-align: left;
+      float: left;
+  }
+  #list2 h1{
+      color: rgb(255, 0, 0);
+      font-family: 'Courgette', cursive;
+      text-shadow: 1px 1px 2px red ;
+  }
+  .logo2{
+      list-style-type: none;
+  }
+  .logo2 li a{
+      cursor: pointer;
+      color: black;
+      text-decoration: none;
+  }
+  .logo2 li{
+      padding-top: 20px;
+      font-size: 20px;
+  }
+  .logo2 li a:hover{
+      font-size: 23px;
+      font-weight: bolder;
+      text-shadow: 1px 1px 2px red;
+     color: red;
+  }
+  
+  /*footer 3*/
+  #list3{
+      margin: 8%  10px;
+      width: 26%;
+      padding: 30px;
+      text-align: left;
+      float: left;
+  }
+  #list3 h1{
+      color: rgb(255, 0, 0);
+      font-family: 'Courgette', cursive;
+      text-shadow: 1px 1px 2px red ;
+  }
+  .logo3{
+      list-style-type: none;
+  }
+  .logo3 li{
+      line-height: 35px;
+      margin-top: 20px;
+  }
+  .logo3 li i{
+      font-size: 30px;
+  }
+  .logo3 li span{
+      font-size: 20px;
+      padding-left: 20px;
+  }
+  #list4{
+      display: block;
+      margin-top: 33%;
+      width: 100%;
+      height: 20vh;
+      background-color: rgb(58, 57, 57);
+  }
+  #list4 h1{
+      color: rgb(255, 4, 4);
+      text-shadow: 2px 2px 2px black;
+      font-size: 30px;
+      font-family: 'Courgette', cursive;
+      word-spacing: 10px;
+  }
