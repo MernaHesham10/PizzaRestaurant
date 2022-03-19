@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<!--validation for admin & user-->
+<script >
+    /* create array of object*/
+var arr = [
+{
+name:"admin",
+pass:1234
+}
+, {
+    name:"user",
+    pass:2001
+}
+];
+console.log(arr);
+
+var adminname = arr[0]['name'];
+var adminpass = arr[0]['pass'];
+var username = arr[1]['name'];
+var userpass = arr[1]['pass'];
+
+
+document.getElementById("login").addEventListener('Sign In', function(e){
+e.preventDefault();//prevent the default behavior of submit
+
+var inputname = document.querySelector('#name').value;
+var inputpass = document.querySelector('#pass').value;
+
+console.log(inputname);
+console.log(inputpass);
+
+if(inputname == adminname && inputpass == adminpass){
+    location.assign("admin.html"); // go to admin page
+}
+else if(inputname == username && inputpass == userpass){
+    location.assign("user.html"); // go to user page
+}
+else{
+    alert("username or password wrong");
+}
+
+} );
+</script>
+</body>
+</html>
